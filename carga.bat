@@ -1,0 +1,5 @@
+(clear)
+(load ontologia.pont)
+(load exercise_suggest.clp)
+(reset)
+(load-instances ontologia.pins)

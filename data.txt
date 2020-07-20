@@ -1,0 +1,52 @@
+
+--- Imprimimos la Planificacion ---
+
+Nombre: Pepe
+Edad: 69
+Patologias:
+    Rodillas debiles 1
+    Edad avanzada grado 2
+
+Sugerencias: 
+ ---------------- Dia 1 ---------------- 
+
+  Calentamiento:   Calentamiento nivel 1
+  Sesion:          Estiramiento de codos nivel 1
+  Estiramiento:    Estiramiento nivel 3
+  Comentario:      Comentario nivel 3
+
+ ---------------- Dia 2 ---------------- 
+
+  Calentamiento:   Calentamiento nivel 2
+  Sesion:          Estiramiento de rodillas nivel 1
+  Estiramiento:    Estiramiento nivel 1
+  Comentario:      Comentario nivel 1
+
+ ---------------- Dia 3 ---------------- 
+
+  Calentamiento:   Calentamiento nivel 3
+  Sesion:          Caminar nivel 1
+  Estiramiento:    Estiramiento nivel 2
+  Comentario:      Comentario nivel 2
+
+ ---------------- Dia 4 ---------------- 
+
+  Calentamiento:   Calentamiento 4
+  Sesion:          Nadar nivel 1
+  Estiramiento:    Estiramiento 4
+  Comentario:      Comentario 4
+
+ ---------------- Dia 5 ---------------- 
+
+  Calentamiento:   Calentamiento 5
+  Sesion:          Tai chi nivel 1
+  Estiramiento:    Estiramiento 5
+  Comentario:      Comentario 5
+
+ ---------------- Dia 6 ---------------- 
+
+  Calentamiento:   Calentamiento 6
+  Sesion:          Caminar nivel 2
+  Estiramiento:    Estiramiento 6
+  Comentario:      Comentario 6
+

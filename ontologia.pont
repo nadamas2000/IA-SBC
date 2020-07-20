@@ -1,0 +1,255 @@
+; Fri Nov 30 17:26:04 GMT+01:00 2018
+; 
+;+ (version "3.4")
+;+ (build "Build 533")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot Nombre
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Descripcion
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot ejercicios_calentamiento
+		(type INSTANCE)
+;+		(allowed-classes Calentamiento)
+		(create-accessor read-write))
+	(single-slot NivelDolor
+		(type INTEGER)
+		(range 1 5)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot aerobicos_contraindicados_sup
+		(type SYMBOL)
+;+		(allowed-parents Anaerobicos_articulacion_inferior)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot flexibilidad_contraindicados_sup
+		(type SYMBOL)
+;+		(allowed-parents Flexibilidad_articulacion_inferior)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ontologia_Class1
+		(type INSTANCE)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot paliar_general
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio)
+		(create-accessor read-write))
+	(multislot ejercicios_estiramiento
+		(type INSTANCE)
+;+		(allowed-classes Estiramiento)
+		(create-accessor read-write))
+	(multislot ejercicios_contraindicados
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio)
+		(create-accessor read-write))
+	(multislot ejercicios_comentario
+		(type INSTANCE)
+;+		(allowed-classes Comentario)
+		(create-accessor read-write))
+	(single-slot flexibilidad_contraindicados_inf
+		(type SYMBOL)
+;+		(allowed-parents Flexibilidad_articulacion_superior)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot ejercicios
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio)
+		(create-accessor read-write))
+	(single-slot Gravedad
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot fortalecer_articulacion_superior
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio)
+		(create-accessor read-write))
+	(multislot fortalecer_articulacion_inferior
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio)
+		(create-accessor read-write))
+	(single-slot Nivel
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot aerobicos_contraindicados_inf
+		(type SYMBOL)
+;+		(allowed-parents Anaerobicos_articulacion_superior)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Ejercicio
+	(is-a USER)
+	(role concrete)
+	(single-slot Nombre
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Descripcion
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nivel
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Aerobicos
+	(is-a Ejercicio)
+	(role concrete))
+
+(defclass Caminar
+	(is-a Aerobicos)
+	(role concrete))
+
+(defclass Bicicleta
+	(is-a Aerobicos)
+	(role concrete))
+
+(defclass Nadar
+	(is-a Aerobicos)
+	(role concrete))
+
+(defclass Anaerobicos
+	(is-a Ejercicio)
+	(role concrete))
+
+(defclass Anaerobicos_articulacion_superior
+	(is-a Anaerobicos)
+	(role concrete)
+	(single-slot aerobicos_contraindicados_sup
+		(type SYMBOL)
+;+		(allowed-parents Anaerobicos_articulacion_inferior)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Fortalecer_codos
+	(is-a Anaerobicos_articulacion_superior)
+	(role concrete))
+
+(defclass Anaerobicos_articulacion_inferior
+	(is-a Anaerobicos)
+	(role concrete)
+	(single-slot aerobicos_contraindicados_inf
+		(type SYMBOL)
+;+		(allowed-parents Anaerobicos_articulacion_superior)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Fortalecer_rodillas
+	(is-a Anaerobicos_articulacion_inferior)
+	(role concrete))
+
+(defclass Equilibrio
+	(is-a Ejercicio)
+	(role concrete))
+
+(defclass Flexibilidad
+	(is-a Ejercicio)
+	(role concrete))
+
+(defclass Flexibilidad_articulacion_inferior
+	(is-a Flexibilidad)
+	(role concrete)
+	(single-slot flexibilidad_contraindicados_inf
+		(type SYMBOL)
+;+		(allowed-parents Flexibilidad_articulacion_superior)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Estiramientos_rodillas
+	(is-a Flexibilidad_articulacion_inferior)
+	(role concrete))
+
+(defclass Flexibilidad_articulacion_superior
+	(is-a Flexibilidad)
+	(role concrete)
+	(single-slot flexibilidad_contraindicados_sup
+		(type SYMBOL)
+;+		(allowed-parents Flexibilidad_articulacion_inferior)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Estiramientos_codos
+	(is-a Flexibilidad_articulacion_superior)
+	(role concrete))
+
+(defclass Calentamiento
+	(is-a Ejercicio)
+	(role concrete))
+
+(defclass Estiramiento
+	(is-a Ejercicio)
+	(role concrete))
+
+(defclass Comentario
+	(is-a Ejercicio)
+	(role concrete))
+
+(defclass Patologia
+	(is-a USER)
+	(role concrete)
+	(single-slot Gravedad
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nombre
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot ejercicios_estiramiento
+		(type INSTANCE)
+;+		(allowed-classes Estiramiento)
+		(create-accessor read-write))
+	(single-slot Descripcion
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot ejercicios_calentamiento
+		(type INSTANCE)
+;+		(allowed-classes Calentamiento)
+		(create-accessor read-write))
+	(multislot ejercicios_contraindicados
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio)
+		(create-accessor read-write))
+	(multislot ejercicios_comentario
+		(type INSTANCE)
+;+		(allowed-classes Comentario)
+		(create-accessor read-write)))
+
+(defclass General
+	(is-a Patologia)
+	(role concrete)
+	(multislot ejercicios_comentario
+		(type INSTANCE)
+;+		(allowed-classes Comentario)
+		(create-accessor read-write))
+	(multislot paliar_general
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio)
+		(create-accessor read-write)))
+
+(defclass Articulacion_superior
+	(is-a Patologia)
+	(role concrete)
+	(multislot fortalecer_articulacion_superior
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio)
+		(create-accessor read-write)))
+
+(defclass Articulacion_inferior
+	(is-a Patologia)
+	(role concrete)
+	(multislot fortalecer_articulacion_inferior
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio)
+		(create-accessor read-write)))

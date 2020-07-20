@@ -1,0 +1,323 @@
+; Fri Nov 30 17:26:04 GMT+01:00 2018
+; 
+;+ (version "3.4")
+;+ (build "Build 533")
+
+([ontologia_Class10] of  Estiramiento
+
+	(Descripcion "Definición del tipo de estiramiento nivel 3")
+	(Nivel "3")
+	(Nombre "Estiramiento nivel 3"))
+
+([ontologia_Class10000] of  Bicicleta
+
+	(Descripcion "Usar bicicleta (estática o no) durante 60 minutos. Descansando solo si se siente dolor o cansancio extremo.")
+	(Nivel "3")
+	(Nombre "Bicicleta nivel 3"))
+
+([ontologia_Class10005] of  Comentario
+
+	(Descripcion "Definición del tipo de comentario nivel 3")
+	(Nivel "3")
+	(Nombre "Comentario nivel 3"))
+
+([ontologia_Class10006] of  Bicicleta
+
+	(Descripcion "Usar bicicleta (estática o no) durante 20 minutos. Descansando solo si se siente dolor o cansancio extremo.")
+	(Nivel "1")
+	(Nombre "Bicicleta nivel 1"))
+
+([ontologia_Class10007] of  Bicicleta
+
+	(Descripcion "Usar bicicleta (estática o no) durante 40 minutos. Descansando solo si se siente dolor o cansancio extremo.")
+	(Nivel "2")
+	(Nombre "Bicicleta nivel 2"))
+
+([ontologia_Class10009] of  Nadar
+
+	(Descripcion "Nadar durante 40 minutos. Descansando solo si se siente dolor o cansancio extremo.")
+	(Nivel "2")
+	(Nombre "Nadar nivel 2"))
+
+([ontologia_Class10010] of  Nadar
+
+	(Descripcion "Nadar durante 20 minutos. Descansando solo si se siente dolor o cansancio extremo.")
+	(Nivel "1")
+	(Nombre "Nadar nivel 1"))
+
+([ontologia_Class10011] of  Nadar
+
+	(Descripcion "Nadar durante 60 minutos. Descansando solo si se siente dolor o cansancio extremo.")
+	(Nivel "3")
+	(Nombre "Nadar nivel 3"))
+
+([ontologia_Class10014] of  Fortalecer_codos
+
+	(Descripcion "Con el brazo estirado completamente hacia abajo, con una pesa media, 1 serie de 8 repeticiones. Si no se llega a la meta usar una pesa más ligera. Si al final de la primera serie no se nota esfuerzo, usar una pesa más pesada.")
+	(Nivel "1")
+	(Nombre "Biceps nivel 1"))
+
+([ontologia_Class10015] of  Fortalecer_codos
+
+	(Descripcion "Con el brazo estirado completamente hacia abajo, con una pesa media, 2 serie de 10 repeticiones. Si no se llega a la meta usar una pesa más ligera. Si al final de la primera serie no se nota esfuerzo, usar una pesa más pesada.")
+	(Nivel "2")
+	(Nombre "Biceps nivel 2"))
+
+([ontologia_Class10016] of  Fortalecer_codos
+
+	(Descripcion "Con el brazo estirado completamente hacia abajo y la palma hacia adelante y una pesa media, 3 serie de 12 repeticiones. Si no se llega a la meta usar una pesa más ligera. Si al final de la primera serie no se nota esfuerzo, usar una pesa más pesada.")
+	(Nivel "3")
+	(Nombre "Biceps nivel 3"))
+
+([ontologia_Class10017] of  Fortalecer_rodillas
+
+	(aerobicos_contraindicados_inf Anaerobicos_articulacion_superior)
+	(Descripcion "Agacharse y levantarse sin necesidad de apoyo y la espalda vertical. 1 serie de 8 repeticiones. Ayudarse con un apoyo si no se alcanza el objetivo. Si al final de la primera serie no se nota esfuerzo, usar una pesa.")
+	(Nivel "1")
+	(Nombre "Sentadillas nivel 1"))
+
+([ontologia_Class10018] of  Fortalecer_rodillas
+
+	(aerobicos_contraindicados_inf Anaerobicos_articulacion_superior)
+	(Descripcion "Agacharse y levantarse sin necesidad de apoyo y la espalda vertical. 2 serie de 10 repeticiones. Ayudarse con un apoyo si no se alcanza el objetivo. Si al final de la primera serie no se nota esfuerzo, usar una pesa.")
+	(Nivel "2")
+	(Nombre "Sentadillas nivel 2"))
+
+([ontologia_Class10019] of  Fortalecer_rodillas
+
+	(aerobicos_contraindicados_inf Anaerobicos_articulacion_superior)
+	(Descripcion "Agacharse y levantarse sin necesidad de apoyo y la espalda vertical. 3 serie de 12 repeticiones. Ayudarse con un apoyo si no se alcanza el objetivo. Si al final de la primera serie no se nota esfuerzo, usar una pesa.")
+	(Nivel "3")
+	(Nombre "Sentadillas nivel 3"))
+
+([ontologia_Class10020] of  Estiramientos_rodillas
+
+	(Descripcion "Sentados en el suelo, abrir las rodillas hacia adelante al máximo posible durante 20 segundos y después relajar las rodillas. Repetir 5 veces.")
+	(flexibilidad_contraindicados_inf Flexibilidad_articulacion_superior)
+	(Nivel "2")
+	(Nombre "Estiramiento de rodillas nivel 2"))
+
+([ontologia_Class10021] of  Estiramientos_rodillas
+
+	(Descripcion "Sentados en el suelo, abrir las rodillas hacia adelante al máximo posible durante 25 segundos y después relajar las rodillas. Repetir 8 veces.")
+	(flexibilidad_contraindicados_inf Flexibilidad_articulacion_superior)
+	(Nivel "3")
+	(Nombre "Estiramiento de rodillas nivel 3"))
+
+([ontologia_Class10022] of  Estiramientos_codos
+
+	(Descripcion "Estirar los brazos hacia abajo abriendo los codos al máximo durante 20 segundos y después relajar. Repetir 5 veces.")
+	(flexibilidad_contraindicados_sup Flexibilidad_articulacion_inferior)
+	(Nivel "2")
+	(Nombre "Estiramiento de codos nivel 2"))
+
+([ontologia_Class10023] of  Estiramientos_codos
+
+	(Descripcion "Estirar los brazos hacia abajo abriendo los codos al máximo durante 25 segundos y después relajar. Repetir 8 veces.")
+	(flexibilidad_contraindicados_sup Flexibilidad_articulacion_inferior)
+	(Nivel "3")
+	(Nombre "Estiramiento de codos nivel 3"))
+
+([ontologia_Class20001] of  Caminar
+
+	(Descripcion "Caminar durante 60 minutos Descansando solo si se siente dolor o cansancio extremo.")
+	(Nivel "3")
+	(Nombre "Caminar nivel 3"))
+
+([ontologia_Class20002] of  Caminar
+
+	(Descripcion "Caminar durante 40 minutos. Descansando solo si se siente dolor o cansancio extremo.")
+	(Nivel "2")
+	(Nombre "Caminar nivel 2"))
+
+([ontologia_Class20003] of  Caminar
+
+	(Descripcion "Caminar durante 20 minutos. Descansando solo si se siente dolor o cansancio extremo.")
+	(Nivel "1")
+	(Nombre "Caminar nivel 1"))
+
+([ontologia_Class20004] of  Equilibrio
+
+	(Descripcion "Realizar una clase de Tai Chi")
+	(Nivel "1")
+	(Nombre "Tai chi nivel 1"))
+
+([ontologia_Class20006] of  Estiramientos_rodillas
+
+	(Descripcion "Sentados en el suelo, abrir las rodillas hacia adelante al máximo posible durante 15 segundos y después relajar las rodillas. Repetir 3 veces.")
+	(flexibilidad_contraindicados_inf Flexibilidad_articulacion_superior)
+	(Nivel "1")
+	(Nombre "Estiramiento de rodillas nivel 1"))
+
+([ontologia_Class20007] of  Estiramientos_codos
+
+	(Descripcion "Estirar los brazos hacia abajo abriendo los codos al máximo durante 15 segundos y después relajar. Repetir 3 veces.")
+	(flexibilidad_contraindicados_sup Flexibilidad_articulacion_inferior)
+	(Nivel "1")
+	(Nombre "Estiramiento de codos nivel 1"))
+
+([ontologia_Class20010] of  Articulacion_inferior
+
+	(Descripcion "Le cuesta soportar peso de pié. Padece dolores leves.")
+	(ejercicios_calentamiento
+		[ontologia_Class5]
+		[ontologia_Class6]
+		[ontologia_Class7])
+	(ejercicios_comentario
+		[ontologia_Class3]
+		[ontologia_Class4]
+		[ontologia_Class10005])
+	(ejercicios_contraindicados [ontologia_Class10014])
+	(ejercicios_estiramiento
+		[ontologia_Class8]
+		[ontologia_Class9]
+		[ontologia_Class10])
+	(fortalecer_articulacion_inferior
+		[ontologia_Class10019]
+		[ontologia_Class10018]
+		[ontologia_Class10019])
+	(Gravedad 1)
+	(Nombre "Rodillas debiles 1"))
+
+([ontologia_Class20011] of  Articulacion_superior
+
+	(Descripcion "Siente dolor leve al realizar esfuerzo con los brazos. Padece dolores leves.")
+	(ejercicios_calentamiento
+		[ontologia_Class5]
+		[ontologia_Class6]
+		[ontologia_Class7])
+	(ejercicios_comentario
+		[ontologia_Class3]
+		[ontologia_Class4]
+		[ontologia_Class10005])
+	(ejercicios_contraindicados [ontologia_Class20003])
+	(ejercicios_estiramiento
+		[ontologia_Class8]
+		[ontologia_Class9]
+		[ontologia_Class10])
+	(fortalecer_articulacion_superior
+		[ontologia_Class10014]
+		[ontologia_Class10015]
+		[ontologia_Class10016])
+	(Gravedad 1)
+	(Nombre "Brazos debiles 1"))
+
+([ontologia_Class20012] of  General
+
+	(Descripcion "La edad avanzada de primer grado son aquellas personas comprendida entre los 50 y 65 años")
+	(ejercicios_calentamiento
+		[ontologia_Class5]
+		[ontologia_Class6]
+		[ontologia_Class7])
+	(ejercicios_comentario
+		[ontologia_Class3]
+		[ontologia_Class4]
+		[ontologia_Class10005])
+	(ejercicios_contraindicados [ontologia_Class10016])
+	(ejercicios_estiramiento
+		[ontologia_Class8]
+		[ontologia_Class9]
+		[ontologia_Class10])
+	(Gravedad 1)
+	(Nombre "Edad avanzada grado 1")
+	(paliar_general
+		[ontologia_Class20001]
+		[ontologia_Class20004]
+		[ontologia_Class10006]
+		[ontologia_Class10019]
+		[ontologia_Class10020]
+		[ontologia_Class20003]))
+
+([ontologia_Class20013] of  General
+
+	(Descripcion "La edad avanzada de primer grado son aquellas personas comprendida entre los 66 y 75 años")
+	(ejercicios_calentamiento
+		[ontologia_Class5]
+		[ontologia_Class6]
+		[ontologia_Class7])
+	(ejercicios_comentario
+		[ontologia_Class3]
+		[ontologia_Class4]
+		[ontologia_Class10005])
+	(ejercicios_contraindicados [ontologia_Class10000])
+	(ejercicios_estiramiento
+		[ontologia_Class8]
+		[ontologia_Class9]
+		[ontologia_Class10])
+	(Gravedad 2)
+	(Nombre "Edad avanzada grado 2")
+	(paliar_general
+		[ontologia_Class20002]
+		[ontologia_Class20004]
+		[ontologia_Class10010]
+		[ontologia_Class20003]
+		[ontologia_Class20006]
+		[ontologia_Class20007]))
+
+([ontologia_Class20014] of  General
+
+	(Descripcion "La edad avanzada de primer grado son aquellas personas de más de 76 años.")
+	(ejercicios_calentamiento
+		[ontologia_Class5]
+		[ontologia_Class6]
+		[ontologia_Class7])
+	(ejercicios_comentario
+		[ontologia_Class3]
+		[ontologia_Class4]
+		[ontologia_Class10005])
+	(ejercicios_contraindicados [ontologia_Class20004])
+	(ejercicios_estiramiento
+		[ontologia_Class8]
+		[ontologia_Class9]
+		[ontologia_Class10])
+	(Gravedad 3)
+	(Nombre "Edad avanzada grado 3")
+	(paliar_general
+		[ontologia_Class20003]
+		[ontologia_Class10006]
+		[ontologia_Class20003]
+		[ontologia_Class10010]
+		[ontologia_Class20006]
+		[ontologia_Class20007]))
+
+([ontologia_Class3] of  Comentario
+
+	(Descripcion "Definición del tipo de comentario nivel 1")
+	(Nivel "1")
+	(Nombre "Comentario nivel 1"))
+
+([ontologia_Class4] of  Comentario
+
+	(Descripcion "Definición del tipo de comentario nivel 2")
+	(Nivel "2")
+	(Nombre "Comentario nivel 2"))
+
+([ontologia_Class5] of  Calentamiento
+
+	(Descripcion "Definición del tipo de calentamiento nivel 1")
+	(Nivel "1")
+	(Nombre "Calentamiento nivel 1"))
+
+([ontologia_Class6] of  Calentamiento
+
+	(Descripcion "Definición del tipo de calentamiento nivel 2")
+	(Nivel "2")
+	(Nombre "Calentamiento nivel 2"))
+
+([ontologia_Class7] of  Calentamiento
+
+	(Descripcion "Definición del tipo de calentamiento nivel 3")
+	(Nivel "3")
+	(Nombre "Calentamiento nivel 3"))
+
+([ontologia_Class8] of  Estiramiento
+
+	(Descripcion "Definición del tipo de estiramiento nivel 1")
+	(Nivel "1")
+	(Nombre "Estiramiento nivel 1"))
+
+([ontologia_Class9] of  Estiramiento
+
+	(Descripcion "Definición del tipo de estiramiento nivel 2")
+	(Nivel "2")
+	(Nombre "Estiramiento nivel 2"))
