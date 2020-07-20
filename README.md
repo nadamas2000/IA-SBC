@@ -1,5 +1,5 @@
 
-1.- Tienes que definir el directorio
+1.- Hay que definir el directorio
 
 2.- cargar .bat
 
