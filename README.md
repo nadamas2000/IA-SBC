@@ -1,7 +1,7 @@
 
 1.- Hay que definir el directorio
 
-2.- cargar .bat
+2.- cargar en CLIPS carga.bat
 
 3.- (run)
 
